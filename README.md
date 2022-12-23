@@ -10,6 +10,9 @@ It implements common regex operations such as:
 - **REPLACE** - Replaces all substrings of the input that match the expression with a given string.
 
 ## Running the project
+
+Install Java 11 and Scala 2.12.15.
+
 To compile the project, run in your terminal:
 ```sbt clean compile```
 
