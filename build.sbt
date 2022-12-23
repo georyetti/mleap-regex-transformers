@@ -17,6 +17,7 @@ val dependencies = Seq(
   "org.apache.spark" %% "spark-mllib" % sparkVersion,
   "ml.combust.mleap" %% "mleap-runtime" % mleapVersion,
   "ml.combust.mleap" %% "mleap-spark-base" % mleapVersion,
+  "ml.combust.mleap" %% "mleap-spark-extension" % mleapVersion,
   "org.scalatest" %% "scalatest-funspec" % "3.2.14" % "test",
 )
 
