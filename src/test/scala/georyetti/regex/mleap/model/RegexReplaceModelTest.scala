@@ -10,7 +10,7 @@ class RegexReplaceModelTest extends AnyFunSpec {
     val RegexReplaceModelEmpty = RegexReplaceModel(regexString = "Hello World", "")
     val input = "Hello World"
 
-    it("test regex remove with simple inputs") {
+    it("test regex replace with simple inputs") {
       val expected= "ello orld"
 
       val actual = regexReplaceModel(input)
@@ -18,7 +18,7 @@ class RegexReplaceModelTest extends AnyFunSpec {
       assert(expected == actual)
     }
 
-    it("test regex extract produces empty string if perfect match") {
+    it("test regex replace produces empty string if perfect match") {
       val expected= ""
       val actual = RegexReplaceModelEmpty(input)
       assert(expected == actual)
