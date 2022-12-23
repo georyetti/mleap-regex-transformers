@@ -10,9 +10,12 @@ import ml.combust.mleap.core.types.{ScalarType, StructType}
  * Extracts the first string that matches the `regexString` expression and corresponds to the regex group index `idx`.
  *
  * @param regexString Regex pattern to match.
- * @param idx Group index to extract.
+ * @param idx Optional non-negative group index to extract. Defaults to 1 if omitted
  */
-case class RegexExtractModel(regexString: String, idx: Integer) extends Model {
+case class RegexExtractModel(regexString: String, idx: Integer = 1) extends Model {
+
+  // Group idx must be non-negative
+  require(idx >= 0)
 
   def apply(input: String): String = {
     val re = regexString.r
