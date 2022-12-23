@@ -5,9 +5,9 @@ This repository serves as an example of how to build MLEAP custom transformers, 
 It implements common regex operations such as:
 
 - **EXTRACT** - Extracts the first string in the input that matches the expression and corresponding to the group index.
-- **EXTRACT ALL** - Extracts all strings in the str that match the expression and corresponding to the group index. *TO-DO*
-- **LIKE** - Returns true if the input string matches the expression, or false otherwise. *TO-DO*
-- **REPLACE** - Replaces all substrings of the input that match the expression with a given string. *TO-DO*
+- **EXTRACT ALL** - Extracts all strings in the str that match the expression and corresponding to the group index.
+- **LIKE** - Returns true if the input string matches the expression, or false otherwise.
+- **REPLACE** - Replaces all substrings of the input that match the expression with a given string.
 
 ## Running the project
 To compile the project, run in your terminal:
